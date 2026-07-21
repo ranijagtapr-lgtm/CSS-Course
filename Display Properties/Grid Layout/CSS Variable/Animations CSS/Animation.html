@@ -1,0 +1,32 @@
+/* Center the box */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Animated box */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    animation: bounce 2s infinite;
+}
+
+/* Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-150px);
+        background-color: red;
+    }
+    100% {
+        transform: translateY(0);
+        background-color: #007BFF;
+    }
+}
